@@ -1,0 +1,97 @@
+.container{
+    padding: 1.5rem;
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    text-align: center;
+    flex: 1;
+    gap: 1rem;
+    
+}
+
+.logo>img{
+    width: 60px;
+    height: 60px;
+}
+
+.logo>h2{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 700;
+    font-family: cursive;
+    
+}
+
+.logo>h2>span{
+    font-size: 2rem;
+    color: #030845;
+    font-style: italic;
+   
+}
+
+.bars{
+    display: none;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 500;
+    list-style: none;
+}
+
+.menu>li:hover{
+    color: #011f3b;
+    cursor: pointer;
+}
+
+input{
+    width: 7rem;
+    border: none;
+    outline: none;
+    padding: 0.5px;
+    border-radius: 5px;
+    height: 21.6px;
+    text-align: center;
+}
+
+.cart{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+ 
+
+@media screen and (max-width:640px){
+    .right{
+        position: absolute;
+        right: 2rem;
+        z-index: 9999;
+        background-color: white;
+        color: var(--black);
+        border-radius: 10px;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .menu{
+        flex-direction: column;
+        margin-left: -2rem;
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    input{
+        display: none;
+    }
+}
